@@ -14,6 +14,14 @@ dependencies:
   '@slidev/theme-seriph':
     specifier: latest
     version: 0.21.3
+  slidev-theme-geist:
+    specifier: ^0.8.1
+    version: 0.8.1
+
+devDependencies:
+  '@iconify-json/logos':
+    specifier: ^1.1.42
+    version: 1.1.42
 
 packages:
 
@@ -577,6 +585,12 @@ packages:
       '@iconify/types': 2.0.0
     dev: false
 
+  /@iconify-json/logos@1.1.42:
+    resolution: {integrity: sha512-/f+frtPm3m3Z30oy8Pk+QqRDkbmAiIaWGPl5CmsCXm15MVfvw9a/V/gD7WzdyuSGAZcFuQaqbHXj92y/n+2ifg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
   /@iconify-json/ph@1.1.10:
     resolution: {integrity: sha512-e7owJfx9BgnUVGXKk/243iFV4tHH1UiBDl5mWYkwKoPf4nN2rzPGdD7ISfvwr3SB25VvOteSC5DOVWxjs56Ywg==}
     dependencies:
@@ -585,7 +599,6 @@ packages:
 
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
-    dev: false
 
   /@iconify/utils@2.1.17:
     resolution: {integrity: sha512-YSzYJwMsCUq1kayUqhQnmJ8mrz4R+CZp/nwc68CEEgWG20eqDplAwyIHKVAzrIRUBzgfgYkGgJSs/z+RaKkKtw==}
@@ -954,6 +967,11 @@ packages:
 
   /@slidev/types@0.22.7:
     resolution: {integrity: sha512-mCVKQbcGTv6d6n9aHpYNp5U04HF+FMbpY083vqpJ6Folc805BB1Am02eubaW0J6nM+dSOu2dDgPY+kIjs75sAQ==}
+    engines: {node: '>=14.0.0'}
+    dev: false
+
+  /@slidev/types@0.28.10:
+    resolution: {integrity: sha512-XcJ12giBaeSHxImlYuDfO1XW686kWDq4uoftnPZyIxhNew4FREsbOLY8oG5Nz5qn05qSsnSDQGo55EbantKvfg==}
     engines: {node: '>=14.0.0'}
     dev: false
 
@@ -4152,6 +4170,15 @@ packages:
     engines: {node: '>=14.16'}
     dev: false
     optional: true
+
+  /slidev-theme-geist@0.8.1:
+    resolution: {integrity: sha512-2DET+H1tvaFQyKYimg+4RlShLLnyOdW40GFfOH8kAJbsI1JOwzDiLv1UjyFO11y9O0/074/YIwArz9xg4Zde5A==}
+    engines: {node: '>=14', slidev: '>=0.20'}
+    dependencies:
+      '@slidev/types': 0.28.10
+      codemirror-theme-vars: 0.1.2
+      prism-theme-vars: 0.2.4
+    dev: false
 
   /source-map-js@1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}

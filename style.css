@@ -1,3 +1,9 @@
 .slidev-layout {
   @apply px-8;
+  ul {
+    @apply list-disc list-inside;
+    ul {
+      @apply ml-6;
+    }
+  }
 }

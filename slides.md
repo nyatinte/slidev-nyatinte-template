@@ -1,14 +1,14 @@
 ---
-theme: seriph
+theme: geist
 background: https://source.unsplash.com/collection/94734566/1920x1080
 class: text-center
 highlighter: shiki
 lineNumbers: false
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
+  ## Slidev Nyatinte Template
+  Personal template
 
-  Learn more at [Sli.dev](https://sli.dev)
+  Learn more at [slidev-nyatinte-template](https://github.com/nyatinte/slidev-nyatinte-template)
 drawings:
   persist: false
 transition: slide-left
@@ -123,7 +123,7 @@ Hover on the bottom-left corner to see the navigation's controls panel, [learn m
 
 ---
 layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
+image: <https://source.unsplash.com/collection/94734566/1920x1080>
 ---
 
 # Code
@@ -202,7 +202,6 @@ Also, HTML elements are valid:
   <span>Right content</span>
 </div>
 -->
-
 
 ---
 class: px-20

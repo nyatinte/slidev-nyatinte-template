@@ -4,6 +4,7 @@ This is a my personal template for [Slidev](https://github.com/slidevjs/slidev)!
 
 To start the slide show:
 
+- `git clone {this repo}`
 - `pnpm install`
 - `pnpm dev`
 - visit <http://localhost:3030>

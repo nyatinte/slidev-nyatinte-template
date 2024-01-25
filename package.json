@@ -10,6 +10,11 @@
   "dependencies": {
     "@slidev/cli": "^0.44.0",
     "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest"
+    "@slidev/theme-seriph": "latest",
+    "slidev-theme-geist": "^0.8.1",
+    "slidev-theme-penguin": "^2.1.0"
+  },
+  "devDependencies": {
+    "@iconify-json/logos": "^1.1.42"
   }
 }

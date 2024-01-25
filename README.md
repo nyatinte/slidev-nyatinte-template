@@ -17,4 +17,4 @@ Learn more about Slidev on [documentations](https://sli.dev/).
 
 - [Slidev](https://github.com/slidevjs/slidev)
 - [pnpm](https://pnpm.io/)
-- [slidev-theme-penguin](https://github.com/alvarosabu/slidev-theme-penguin)
+- [slidev-theme-geist](https://github.com/nico-bachner/slidev-theme-geist?tab=readme-ov-file)

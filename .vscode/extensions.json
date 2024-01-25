@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "antfu.slidev",
+    "hancel.markdown-image",
+    "vue.volar",
+    "davidanson.vscode-markdownlint",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

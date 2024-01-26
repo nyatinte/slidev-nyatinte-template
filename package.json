@@ -14,6 +14,7 @@
     "slidev-theme-geist": "^0.8.1"
   },
   "devDependencies": {
-    "@iconify-json/logos": "^1.1.42"
+    "@iconify-json/logos": "^1.1.42",
+    "playwright-chromium": "^1.41.1"
   }
 }

@@ -14,6 +14,7 @@ drawings:
 transition: slide-left
 mdc: true
 ---
+
 <FirstSlide title="Slidev Nyatinte Template" subtitle="Personal template" belong="nyatinte company" />
 
 ---

@@ -17,12 +17,15 @@
       "source.fixAll.markdownlint": "explicit"
     }
   },
+  "[vue]":{"editor.defaultFormatter": "Vue.volar"},
   // Config for markdownlint
   "markdownlint.config": {
     "no-inline-html": false,
     "single-title": false,
     "heading-style": false,
-    "blanks-around-headings": false
+    "blanks-around-headings": false,
+    // "front_matter_title": "<FirstSlide .*/>$",　これがうまく効かないのでfalseに
+    "first-line-heading": false
   },
   // Config for markdown-image
   "markdown-image.base.codeType": "HTML",

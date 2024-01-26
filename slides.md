@@ -14,10 +14,7 @@ drawings:
 transition: slide-left
 mdc: true
 ---
-
-# TITLE HERE
-
-## MY NAME HERE
+<FirstSlide title="Slidev Nyatinte Template" subtitle="Personal template" belong="nyatinte company" />
 
 ---
 transition: fade-out

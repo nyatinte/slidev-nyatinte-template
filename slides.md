@@ -15,399 +15,192 @@ transition: slide-left
 mdc: true
 ---
 
-<FirstSlide title="Slidev Nyatinte Template" subtitle="Personal template" belong="nyatinte company" />
+<FirstSlide title="スプレッドシートを用いたデータ解析における情報要求分析" subtitle="筑波大学: 丸田 敦貴, 田貝 奈央, 加藤 誠" belong="214041 中村拓実" />
 
 ---
-transition: fade-out
----
 
-# What is Slidev?
+# 原論文
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+<https://confit.atlas.jp/guide/event-img/deim2024/T3-B-3-03/public/pdf?type=in>
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
-
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-<!--
-Here is another comment.
--->
+<img alt="qr code " src="images/2d5c59147e20356eb87a502a6228488c72893c08d8f807011078573ba4600bb8.png" />  
 
 ---
-layout: default
+
+# 気になった理由
+
+情報要求に対して人はどのようなアクションを取るのか？という問題に対する研究
+
+例えば、この情報要求については検索をする。ということがわかれば、<br />
+**どのようなWebサイトに需要があるのか、またWebサイトはどのような情報を提供すべきかがわかる**
+
+→ 自分の仕事領域と関連する研究
+
 ---
 
-# Table of contents
+# はじめに結論
 
-```html
-<Toc minDepth="1" maxDepth="1"></Toc>
-```
+<img class="mx-auto h-90 border" alt="summary" src="images/a49b3b9561de40252796f5bd60cec341df76dcf64e813b841f5d57735fa1755d.png" />  
 
-<Toc maxDepth="1"></Toc>
+<p class="text-center">出典: Zoom発表資料</p>
 
 ---
-transition: slide-up
-level: 2
+
+# 研究目的
+
+## スプレッドシートを用いたデータ解析における情報要求分析を行う
+
+- データ駆動の意思決定は重要
+- スプシは直感的なデータ操作が可能なツール
+- スプシはデータ解析の知識不足を一部補うことが可能,一方スプレッドシート自体の理解や分析結果の正確な解釈のために，多様な知識（ドメイン知識や分析方法の知識など）が必要
+- ↑ユーザはスプレッドシート理解のために約 40%の時間を情報探索に費やしている(先行研究)
+- 直感的なデータ分析のためには、**ユーザの情報要求を理解することが重要**
+
 ---
 
-# Navigation
+# リサーチクエスチョン(RQ)
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
+<v-clicks class="grid grid-rows-3 text-lg">
 
-## Keyboard Shortcuts
+1. スプレッドシートを用いたデータ解析中にどのような情報要求が生まれるのか？
 
-|     |     |
+2. スプレッドシートを用いたデータ解析中の情報要求を満たすためにユーザはどのように検索するのか？
+
+3. スプレッドシートを用いたデータ解析において，いつ情報要求が生まれるのか？
+
+</v-clicks>
+
+<v-click >
+
+<p class="text-center text-lg">
+
+ 要するに、**いつ なにを どうやって** 検索するのか？
+
+ </p>
+
+</v-click>
+
+---
+
+# 実験方法
+
+- 対象: 36人の大学院生
+- タスク: スプレッドシートを使用してデータを分析し、その結果をまとめたレポートを作成
+- 条件: 参加者は、データ解析プロセス中に生じる情報要求を探求するため、**思考発話法**を用いて自身の考えを声に出して述べる
+- 分類手法: 初期の情報要求の分類法は文献調査に基づいて作成され、収集した情報要求の実例を用いて改善
+- 評価: タスク終了後のインタビューを通じて、各情報要求に対する主観的な満足度と検索の難易度についてのデータを収集
+
+---
+
+<img alt="picture 3" src="images/e376273257366a628d081ba0c2d2c323af0a57c5178a981dbda6f7f39d92f4a3.png" />  
+
+---
+
+# RQ1: スプレッドシートを用いたデータ解析中にどのような情報要求が生まれるのか？
+
+データ解析の情報行動の分類法やシステムに関する 85 本の論文を収集し，先行研究から 5 つのカテゴリからなる仮の分類法を構築した
+
+| カテゴリ | 概要 |
 | --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
-
-<!-- https://sli.dev/guide/animations.html#click-animations -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
-
----
-layout: image-right
-image: <https://source.unsplash.com/collection/94734566/1920x1080>
----
-
-# Code
-
-Use code snippets and get the highlighting directly![^1]
-
-```ts {all|2|1-6|9|all}
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
-
-function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
-```
-
-<arrow v-click="[3, 4]" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
-
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
-
-<style>
-.footnotes-sep {
-  @apply mt-20 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
+| テキスト | 表中の単語の意味に関する要求 |
+| データ | 閲覧している表に含まれていない表に関する要求 |
+| メタデータ | 表の出典元や作成方法などの表自体の情報に関する要求 |
+| 知見 | 知見の根拠となる文献およびデータに関する要求 |
+| 分析方法 | データ解析の方法に関する要求 |
 
 ---
 
-# Components
+# 分類の改善
 
-<div grid="~ cols-2 gap-4">
-<div>
+仮の分類法でインタビューを実施
 
-You can use Vue components directly inside your slides.
+2人の著者がそれぞれ独立してインタビューの記録を分類し、新たな分類法を構築
 
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
+新たな分類法をお互いに見せあい、議論を行い、最終的な分類法を構築
 
-```html
-<Counter :count="10" />
-```
+→ 5つのカテゴリから 6つのカテゴリに変更
 
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
----
-class: px-20
----
-
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="-t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
-
----
-preload: false
----
-
-# Animations
-
-Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
-```
-
-<div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn More](https://sli.dev/guide/animations.html#motion)
-
-</div>
+<img class="h-60 mx-auto p-2 bg-gray-200 rounded" alt="picture 2" src="images/9981d98637d03479c639d30f978a463aead44d18ecaa0bdb056cbd8286a2ef8c.png" />  
 
 ---
 
-# LaTeX
+# カテゴリ別の主観難易度
 
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
+<img alt="picture 4" src="images/79b679a401c9ab4b71582a0c87ec692b95be200b5913cf7d7d7cb081d671e047.png" />  
 
-<br>
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
+`根拠`や`解析方法`のカテゴリが難易度が高い
 
 ---
 
-# Diagrams
+# RQ2: スプレッドシートを用いたデータ解析中の情報要求を満たすためにユーザはどのように検索するのか？
 
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
+Web検索の利用に優位な差が見られた
 
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectivness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
+<img class="h-80 mx-auto" alt="picture 5" src="images/25b952bed00d6f4eab690220d880ffd0f31f9fd9324ed2e717ca7065cb756fd2.png" />  
 
 ---
-src: ./pages/multiple-entries.md
-hide: false
----
+
+# 分析
+
+- `テキスト` と `根拠` カテゴリ → Web 検索 多
+- `メタデータ` と `データ傾向` カテゴリ → Web 検索 少
+
+<hr />
+
+`テキスト` と `根拠` カテゴリを満たすための情報が Web 上に多い
+
+反対に，`メタデータ`と `データ傾向` カテゴリを満たすための情報がスプレッドシートに含まれることが多い
 
 ---
-layout: center
-class: text-center
+
+# ユーザー行動と情報要求の満足度を明らかにする
+
+ユーザ行動と情報要求の満足との相関の程度を明らかにするために，ロジスティック回帰分析を実施
+
+- 目的変数: ユーザの満足を示すバイナリ変数
+- 説明変数: 情報要求が生まれたセグメントで，どのユーザ行動が見られたかを示すバイナリ変数
+
+**Web検索とスプシを読むときに情報要求が生まれると，ユーザの満足度が高い**
+
+<img class="h-70 mx-auto" alt="picture 7" src="images/9d37d8bdc90c363f42f3047cce24218662ae39043460ff734051eaf58aa373cf.png" />  
+
 ---
 
-# Learn More
+# RQ3: スプレッドシートを用いたデータ解析において，いつ情報要求が生まれるのか？
 
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+<img class="h-80 mx-auto" alt="picture 6" src="images/1b4374c39a394fc907e7d43927f4f390bf582ab3b11ea078ac1acce56f4cb5c9.png" />  
+
+**情報要求に対するユーザー行動は異なる傾向**
+
+---
+
+# 情報要求と遷移確率
+
+<img class="h-80 mx-auto" alt="picture 8" src="images/b92e8bcaaace48b6f612ea2bda5c778d62ddeb3e611cea9be1e68b9861484578.png" />  
+
+**同じカテゴリの情報要求は続けて発生しやすい**
+
+→ まとめて情報を探す。(e.g: スプシの使い方を調べる→データ分析の方法を調べる などは少ない)
+
+---
+
+# 結論(再掲)
+
+<img class="mx-auto h-90 border" alt="summary" src="images/a49b3b9561de40252796f5bd60cec341df76dcf64e813b841f5d57735fa1755d.png" />  
+
+<p class="text-center">出典: Zoom発表資料</p>
+
+---
+
+# 感想
+
+- 情報要求に対して、Web検索という行動は多く発生する
+- 逆に、Web検索で満たされない情報要求はスプレッドシートに含まれることが多い(メタデータ)
+- 複雑な情報がほしいときはクエリが長くなる → 生成系AIが適切なクエリに表現し直したりしたら面白そう
+- Web検索が多いけど、実際に情報要求ごとの滞在時間やサイトの特徴を調べてみたい
+- 先行研究の内容で面白そうなのがいくつかあった
+  - ユーザの行動に基づいて検索効果を向上させる研究
+  - 複雑な検索タスクにおけるユーザの行動を調査した研究
+- この研究のスコープをWeb検索に絞り、具体的なサイトの特徴を調査する研究も面白そう
+
+---

@@ -1,4 +1,3 @@
-<!-- ファイルパス: /Users/nyante/my_programs/slide/slidev-nyatinte-template-dev/slides.md -->
 ---
 theme: geist
 info: |
@@ -90,12 +89,12 @@ level: 2
 
 ## キーボードショートカット
 
-|                                                     |                             |
-| --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | 次のアニメーションまたはスライド     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | 前のアニメーションまたはスライド |
-| <kbd>up</kbd>                                       | 前のスライド              |
-| <kbd>down</kbd>                                     | 次のスライド                  |
+|                                                     |                                  |
+| --------------------------------------------------- | -------------------------------- |
+| <KBD>right</KBD> / <KBD>space</KBD>                 | 次のアニメーションまたはスライド |
+| <KBD>left</KBD>  / <KBD>shift</KBD><KBD>space</KBD> | 前のアニメーションまたはスライド |
+| <KBD>up</KBD>                                       | 前のスライド                     |
+| <KBD>down</KBD>                                     | 次のスライド                     |
 
 <!-- https://sli.dev/guide/animations.html#click-animation -->
 <img

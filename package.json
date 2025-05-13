@@ -1,5 +1,5 @@
 {
-  "name": "slidev-nyatinte-template",
+  "name": "temp",
   "type": "module",
   "private": true,
   "scripts": {
@@ -8,16 +8,10 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^0.48.0-beta.21",
-    "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest",
+    "@slidev/cli": "^51.6.0",
+    "@unocss/preset-wind4": "^66.1.1",
     "slidev-theme-geist": "^0.8.1",
-    "vue": "^3.4.21"
-  },
-  "devDependencies": {
-    "@iconify-json/carbon": "^1.1.30",
-    "@iconify-json/logos": "^1.1.42",
-    "@iconify-json/ph": "^1.1.11",
-    "playwright-chromium": "^1.41.1"
+    "unocss": "^66.1.1",
+    "vue": "^3.5.13"
   }
 }

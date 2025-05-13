@@ -4,6 +4,7 @@
     "hancel.markdown-image",
     "vue.volar",
     "davidanson.vscode-markdownlint",
-    "streetsidesoftware.code-spell-checker"
+    "streetsidesoftware.code-spell-checker",
+    "antfu.unocss"
   ]
 }

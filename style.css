@@ -1,9 +1,9 @@
 .slidev-layout {
-  @apply px-8;
+  --uno :px-8;
   ul {
-    @apply list-disc list-inside;
+    --uno: list-disc list-inside;
     ul {
-      @apply ml-6;
+      --uno : ml-6;
     }
   }
 }

@@ -36,5 +36,6 @@
   ],
   "unocss.include": [
     "slides.md",
+    "pages/**/*.md",
   ]
 }

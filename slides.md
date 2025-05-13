@@ -1,30 +1,31 @@
+<!-- ファイルパス: /Users/nyante/my_programs/slide/slidev-nyatinte-template-dev/slides.md -->
 ---
 theme: geist
 info: |
-  ## Slidev [Sli.dev](https://sli.dev)
-# https://sli.dev/features/drawing
+## Slidev [Sli.dev](https://sli.dev)
+# <https://sli.dev/features/drawing>
 drawings:
   persist: false
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
+# スライドトランジション: <https://sli.dev/guide/animations.html#slide-transitions>
 transition: slide-left
-# enable MDC Syntax: https://sli.dev/features/mdc
+# MDC構文を有効化: <https://sli.dev/features/mdc>
 mdc: true
 
 class: p-12
 layout: cover
-background: https://cover.sli.dev
+background: <https://cover.sli.dev>
 ---
 
-# Welcome to Slidev
+# Slidevへようこそ
 
-Presentation slides for developers
+開発者のためのプレゼンテーションスライド
 
 <div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Press Space for next page <carbon:arrow-right />
+  次のページへはスペースキーを押してください <carbon:arrow-right />
 </div>
 
 <div class="abs-br m-6 text-xl">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="slidev-icon-btn">
+  <button @click="$slidev.nav.openInEditor()" title="エディタで開く" class="slidev-icon-btn">
     <carbon:edit />
   </button>
   <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
@@ -33,33 +34,33 @@ Presentation slides for developers
 </div>
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+各スライドの最後のコメントブロックはスライドノートとして扱われます。プレゼンターモードでスライドと一緒に表示および編集が可能です。[ドキュメントでもっと読む](https://sli.dev/guide/syntax.html#notes)
 -->
 
 ---
 transition: fade-out
 ---
 
-# What is Slidev?
+# Slidevとは？
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+Slidevは開発者向けに設計されたスライド作成・プレゼンテーションツールで、以下の特徴があります
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
+- 📝 **テキストベース** - Markdownでコンテンツに集中し、後からスタイリング
+- 🎨 **テーマ対応** - テーマはnpmパッケージとして共有・再利用可能
+- 🧑‍💻 **開発者フレンドリー** - コードのハイライト、オートコンプリート付きのライブコーディング
+- 🤹 **インタラクティブ** - Vueコンポーネントを埋め込んで表現力を強化
+- 🎥 **レコーディング** - 組み込みの録画機能とカメラビュー
+- 📤 **ポータブル** - PDF、PPTX、PNG、ホスト可能なSPAへのエクスポート
+- 🛠 **カスタマイズ可能** - Webページで可能なことはSlidevでも実現可能
 <br>
 
 <br>
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+詳細は[Slidevの特徴](https://sli.dev/guide/why)をご覧ください
 
 <!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
+マークダウン内で`style`タグを使用して現在のページのスタイルを上書きできます。
+詳細: https://sli.dev/features/slide-scope-style
 -->
 
 <style>
@@ -75,7 +76,7 @@ h1 {
 </style>
 
 <!--
-Here is another comment.
+こちらは別のコメントです。
 -->
 
 ---
@@ -83,18 +84,18 @@ transition: slide-up
 level: 2
 ---
 
-# Navigation
+# ナビゲーション
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
+左下隅にカーソルを合わせるとナビゲーションコントロールパネルが表示されます。[詳細はこちら](https://sli.dev/guide/ui#navigation-bar)
 
-## Keyboard Shortcuts
+## キーボードショートカット
 
 |                                                     |                             |
 | --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | next animation or slide     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd>                                       | previous slide              |
-| <kbd>down</kbd>                                     | next slide                  |
+| <kbd>right</kbd> / <kbd>space</kbd>                 | 次のアニメーションまたはスライド     |
+| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | 前のアニメーションまたはスライド |
+| <kbd>up</kbd>                                       | 前のスライド              |
+| <kbd>down</kbd>                                     | 次のスライド                  |
 
 <!-- https://sli.dev/guide/animations.html#click-animation -->
 <img
@@ -103,22 +104,22 @@ Hover on the bottom-left corner to see the navigation's controls panel, [learn m
   src="https://sli.dev/assets/arrow-bottom-left.svg"
   alt=""
 />
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">ここ！</p>
 
 ---
 layout: two-cols
 layoutClass: gap-16
 ---
 
-# Table of contents
+# 目次
 
-You can use the `Toc` component to generate a table of contents for your slides:
+スライドの目次を生成するには、`Toc`コンポーネントを使用できます：
 
 ```html
 <Toc minDepth="1" maxDepth="1" />
 ```
 
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
+タイトルはスライドの内容から自動的に取得されますが、frontmatterで`title`と`level`を指定することで上書きできます。
 
 ::right::
 
@@ -129,14 +130,14 @@ layout: image-right
 image: <https://cover.sli.dev>
 ---
 
-# Code
+# コード
 
-Use code snippets and get the highlighting directly, and even types hover!
+コードスニペットを使用すると、ハイライトや型情報のホバー表示が直接得られます！
 
 ```ts {all|5|7|7-8|10|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
+// TwoSlashはTypeScriptのホバー情報を有効化します
+// マークダウンコードブロック内のエラーも表示されます
+// 詳細は https://shiki.style/packages/twoslash
 
 import { computed, ref } from 'vue'
 
@@ -148,14 +149,14 @@ doubled.value = 2
 
 <arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="334" color="#953" width="2" arrowSize="1" />
 
-<!-- This allow you to embed external code blocks -->
+<!-- これで外部コードブロックを埋め込むことができます -->
 <<< @/snippets/external.ts#snippet
 
-<!-- Footer -->
+<!-- フッター -->
 
-[Learn more](https://sli.dev/features/line-highlighting)
+[詳細はこちら](https://sli.dev/features/line-highlighting)
 
-<!-- Inline style -->
+<!-- インラインスタイル -->
 <style>
 .footnotes-sep {
   @apply mt-5 opacity-10;
@@ -169,13 +170,13 @@ doubled.value = 2
 </style>
 
 <!--
-Notes can also sync with clicks
+ノートはクリックと同期することもできます
 
-[click] This will be highlighted after the first click
+[click] これは最初のクリック後にハイライトされます
 
-[click] Highlighted with `count = ref(0)`
+[click] `count = ref(0)`でハイライト
 
-[click:3] Last click (skip two clicks)
+[click:3] 最後のクリック（2回のクリックをスキップ）
 -->
 
 ---
@@ -184,13 +185,13 @@ level: 2
 
 # Shiki Magic Move
 
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
+[shiki-magic-move](https://shiki-magic-move.netlify.app/)を活用し、Slidevは複数のコードスニペット間のアニメーションをサポートします。
 
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
+複数のコードブロックを追加し、それらを<code>````md magic-move</code>（4つのバッククォート）で囲むことでマジックムーブを有効にできます。例えば：
 
 ````md magic-move {lines: true}
 ```ts {*|2|*}
-// step 1
+// ステップ 1
 const author = reactive({
   name: 'John Doe',
   books: [
@@ -202,7 +203,7 @@ const author = reactive({
 ```
 
 ```ts {*|1-2|3-4|3-4,8}
-// step 2
+// ステップ 2
 export default {
   data() {
     return {
@@ -220,7 +221,7 @@ export default {
 ```
 
 ```ts
-// step 3
+// ステップ 3
 export default {
   data: () => ({
     author: {
@@ -235,10 +236,10 @@ export default {
 }
 ```
 
-Non-code blocks are ignored.
+コード以外のブロックは無視されます。
 
 ```vue
-<!-- step 4 -->
+<!-- ステップ 4 -->
 <script setup>
 const author = {
   name: 'John Doe',
@@ -254,14 +255,14 @@ const author = {
 
 ---
 
-# Components
+# コンポーネント
 
 <div grid="~ cols-2 gap-4">
 <div>
 
-You can use Vue components directly inside your slides.
+スライド内で直接Vueコンポーネントを使用できます。
 
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
+`<Tweet/>` や `<Youtube/>` などの組み込みコンポーネントが提供されており、直接使用できます。また、カスタムコンポーネントの追加も非常に簡単です。
 
 ```html
 <Counter :count="10" />
@@ -270,7 +271,7 @@ We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that
 <!-- ./components/Counter.vue -->
 <Counter :count="10" m="t-4" />
 
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
+詳細は[ガイド](https://sli.dev/builtin/components.html)をご覧ください。
 
 </div>
 <div>
@@ -285,12 +286,12 @@ Check out [the guides](https://sli.dev/builtin/components.html) for more.
 </div>
 
 <!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
+プレゼンターノートには **太字**、*斜体*、そして ~~取り消し線~~ テキストが使えます。
 
-Also, HTML elements are valid:
+また、HTML要素も有効です：
 <div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
+  <span style="flex-grow: 1;">左側のコンテンツ</span>
+  <span>右側のコンテンツ</span>
 </div>
 -->
 
@@ -298,9 +299,9 @@ Also, HTML elements are valid:
 class: px-20
 ---
 
-# Themes
+# テーマ
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
+Slidevには強力なテーマサポートがあります。テーマはスタイル、レイアウト、コンポーネント、さらにはツールの設定まで提供できます。frontmatterで**たった一箇所の編集**でテーマを切り替えられます：
 
 <div grid="~ cols-2 gap-2" m="t-2">
 
@@ -322,21 +323,21 @@ theme: seriph
 
 </div>
 
-Read more about [How to use a theme](https://sli.dev/guide/theme-addon#use-theme) and
-check out the [Awesome Themes Gallery](https://sli.dev/resources/theme-gallery).
+[テーマの使い方](https://sli.dev/guide/theme-addon#use-theme)や
+[素晴らしいテーマギャラリー](https://sli.dev/resources/theme-gallery)についてもっと読む。
 
 ---
 
-# Clicks Animations
+# クリックアニメーション
 
-You can add `v-click` to elements to add a click animation.
+要素に`v-click`を追加することでクリックアニメーションを追加できます。
 
 <div v-click>
 
-This shows up when you click the slide:
+これはスライドをクリックすると表示されます：
 
 ```html
-<div v-click>This shows up when you click the slide.</div>
+<div v-click>これはスライドをクリックすると表示されます。</div>
 ```
 
 </div>
@@ -345,28 +346,28 @@ This shows up when you click the slide:
 
 <v-click>
 
-The <span v-mark.red="3"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="4">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
+<span v-mark.red="3"><code>v-mark</code> ディレクティブ</span>
+を使用すると
+<span v-mark.circle.orange="4">インラインマーク</span>
+を追加できます。[Rough Notation](https://roughnotation.com/)を活用しています：
 
 ```html
-<span v-mark.underline.orange>inline markers</span>
+<span v-mark.underline.orange>インラインマーカー</span>
 ```
 
 </v-click>
 
 <div mt-20 v-click>
 
-[Learn more](https://sli.dev/guide/animations#click-animation)
+[詳細はこちら](https://sli.dev/guide/animations#click-animation)
 
 </div>
 
 ---
 
-# Motions
+# モーション
 
-Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
+モーションアニメーションは[@vueuse/motion](https://motion.vueuse.org/)によって提供され、`v-motion`ディレクティブによってトリガーされます。
 
 ```html
 <div
@@ -417,7 +418,7 @@ Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), t
   </div>
 </div>
 
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
+<!-- vueのscript setupスクリプトはマークダウン内で直接使用でき、現在のページにのみ影響します -->
 <script setup lang="ts">
 const final = {
   x: 0,
@@ -438,7 +439,7 @@ const final = {
   :initial="{ x:35, y: 30, opacity: 0}"
   :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
 
-[Learn more](https://sli.dev/guide/animations.html#motion)
+[詳細はこちら](https://sli.dev/guide/animations.html#motion)
 
 </div>
 
@@ -446,13 +447,13 @@ const final = {
 
 # LaTeX
 
-LaTeX is supported out-of-box. Powered by [KaTeX](https://katex.org/).
+LaTeXはすぐに使用できます。[KaTeX](https://katex.org/)によって提供されています。
 
 <div h-3 />
 
-Inline $\sqrt{3x-1}+(1+x)^2$
+インライン $\sqrt{3x-1}+(1+x)^2$
 
-Block
+ブロック
 $$ {1|3|all}
 \begin{aligned}
 \nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
@@ -462,46 +463,46 @@ $$ {1|3|all}
 \end{aligned}
 $$
 
-[Learn more](https://sli.dev/features/latex)
+[詳細はこちら](https://sli.dev/features/latex)
 
 ---
 
-# Diagrams
+# ダイアグラム
 
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
+テキストによる記述から直接マークダウン内でダイアグラムやグラフを作成できます。
 
 <div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
 
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
+```mermaid {scale: 0.5, alt: 'シンプルなシーケンス図'}
 sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
+    Alice->John: こんにちはジョン、元気？
+    Note over Alice,John: 典型的なやり取り
 ```
 
 ```mermaid {theme: 'neutral', scale: 0.8}
 graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
+B[テキスト] --> C{決定}
+C -->|一つ目| D[結果 1]
+C -->|二つ目| E[結果 2]
 ```
 
 ```mermaid
 mindmap
-  root((mindmap))
-    Origins
-      Long history
+  root((マインドマップ))
+    起源
+      長い歴史
       ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
+      普及
+        イギリスの心理学著者トニー・ブザン
+    研究
+      有効性<br/>と特徴について
+      自動作成について
+        用途
+            創造的技法
+            戦略的計画
+            議論のマッピング
+    ツール
+      ペンと紙
       Mermaid
 ```
 
@@ -540,7 +541,7 @@ database "MySql" {
 
 </div>
 
-Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
+詳細: [Mermaidダイアグラム](https://sli.dev/features/mermaid) と [PlantUMLダイアグラム](https://sli.dev/features/plantuml)
 
 ---
 foo: bar
@@ -548,13 +549,13 @@ dragPos:
   square: 691,32,167,_,-16
 ---
 
-# Draggable Elements
+# ドラッグ可能な要素
 
-Double-click on the draggable elements to edit their positions.
+ドラッグ可能な要素をダブルクリックすると位置を編集できます。
 
 <br>
 
-###### Directive Usage
+###### ディレクティブの使用法
 
 ```md
 <img v-drag="'square'" src="https://sli.dev/logo.png">
@@ -562,24 +563,24 @@ Double-click on the draggable elements to edit their positions.
 
 <br>
 
-###### Component Usage
+###### コンポーネントの使用法
 
 ```md
 <v-drag text-3xl>
   <div class="i-carbon:arrow-up" />
-  Use the `v-drag` component to have a draggable container!
+  ドラッグ可能なコンテナを作るには `v-drag` コンポーネントを使用します！
 </v-drag>
 ```
 
 <v-drag pos="663,206,261,_,-15">
   <div text-center text-3xl border border-main rounded>
-    Double-click me!
+    ダブルクリックしてね！
   </div>
 </v-drag>
 
 <img v-drag="'square'" src="https://sli.dev/logo.png">
 
-###### Draggable Arrow
+###### ドラッグ可能な矢印
 
 ```md
 <v-drag-arrow two-way />
@@ -594,11 +595,11 @@ hide: false
 
 ---
 
-# Monaco Editor
+# Monaco エディタ
 
-Slidev provides built-in Monaco Editor support.
+Slidevは組み込みのMonaco Editorをサポートしています。
 
-Add `{monaco}` to the code block to turn it into an editor:
+コードブロックに `{monaco}` を追加するとエディタに変換されます：
 
 ```ts {monaco}
 import { ref } from 'vue'
@@ -607,7 +608,7 @@ import { emptyArray } from './external'
 const arr = ref(emptyArray(10))
 ```
 
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
+`{monaco-run}` を使用すると、スライド内で直接コードを実行できるエディタが作成されます：
 
 ```ts {monaco-run}
 import { version } from 'vue'
@@ -623,8 +624,8 @@ layout: center
 class: text-center
 ---
 
-# Learn More
+# もっと学ぶ
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
+[ドキュメント](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [ショーケース](https://sli.dev/resources/showcases)
 
 <PoweredBySlidev mt-10 />
